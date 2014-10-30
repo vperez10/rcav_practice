@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-md-12">
+    <p class="lead">Our little calculator has an infinite number of resources available for you. The resources all live at URLs according to the following scheme:</p>
+
+    <ul>
+      <li>The square of a particular NUMBER lives at the URL <code>/square/NUMBER</code></li>
+      <li>The square root of a particular NUMBER lives at the URL <code>/square_root/NUMBER</code></li>
+      <li>
+        The size of a loan payment, given an interest rate (in basis points, or hundredths of a percent), a total number of payments, and a principal amount, lives at the URL
+        <code>/payment/INTEREST_RATE/NUMBER_OF_PAYMENTS/PRINCIPAL_VALUE</code>
+      </li>
+    </ul>
+
+    <p>For example, if you visit <a href="http://localhost:3000/square_root/8">http://localhost:3000/square_root/8</a>, you should see something like</p>
+
+    <blockquote>
+      <div class="page-header">
+        <h1>Square Root</h1>
+      </div>
+
+      <p class="lead">The square root of 8.0 is 2.83.</p>
+    </blockquote>
+
+    <p>If you visit <a href="http://localhost:3000/payment/34/60/30000">http://localhost:3000/payment/34/60/30000</a>, you should see something like</p>
+
+    <blockquote>
+      <div class="page-header">
+        <h1>Payment</h1>
+      </div>
+
+      <p class="lead">The required loan payment is -$553.58.</p>
+    </blockquote>
+
+    <p>Unfortunately, our calculator is not very smart yet and all of these numbers can only be integers. Sorry and thank you!</p>
+
+    <h2>Your task: Make all of these URLs work.</h2>
+
+    <hr>
+  </div>
+</div>
