@@ -1,10 +1,5 @@
 class CalculationsController < ApplicationController
   def instructions
-  end
-
-  def sqrt
-  end
-
-  def pmt
+    render("instructions.html.erb")
   end
 end
