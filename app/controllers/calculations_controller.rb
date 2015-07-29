@@ -14,11 +14,11 @@ end
 end
 
 def range
-  	render("application.html.erb")
+  	render("range.html.erb")
 end
 
 def payment
 	@payment == params["values"] 
-  	render("application.html.erb")
+  	render("payment.html.erb")
 end
 end
