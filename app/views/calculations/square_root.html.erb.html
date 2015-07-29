@@ -14,7 +14,12 @@
   </div>
 
   <div class="container">
-    <%= @square_root %>
+    <form>
+    <label for="number">Number you desire the square root of</label>
+    <input id="number" type="integer" name="number">
+    <label for="square">Your square root is</label>
+    @square_root
+    </form>
   </div>
 </body>
 </html>

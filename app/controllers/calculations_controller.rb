@@ -4,12 +4,11 @@ class CalculationsController < ApplicationController
   end
 
 def square
-	@square == params["square"] 
+	@square = params[":root"]
   	render("square.html.erb")
 end
 
   def square_root
-  	@square_root == params["root"] 
   	render("square_root.html.erb")
 end
 
@@ -18,7 +17,7 @@ def range
 end
 
 def payment
-	@payment == params["values"] 
+	
   	render("payment.html.erb")
 end
 end
