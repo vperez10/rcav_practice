@@ -4,21 +4,22 @@ class CalculationsController < ApplicationController
   end
 
   def square
-   @square = params[":root"]
+   @square = params[:root]
+   @r = @square.to_f
  end
 
  def square_root
-  @root = params[":root"]
+  @root = params["root"]
 end
 
 def range
-  @min = params[":min"]
-  @max = params[":max"]
+  @min = params["min"]
+  @max = params["max"]
 end
 
 def payment
-  @apr = params[":apr"]
-  @yr = params[":yr"]
-  @loan = params[":loan"]
+  @apr = params["apr"]
+  @yr = params["yr"]
+  @loan = params["loan"]
 end
 end
