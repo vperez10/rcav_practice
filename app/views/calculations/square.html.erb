@@ -1,26 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Practice</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div class="jumbotron">
-    <div class="container">
-      <h1>Square of a value</h1>
-    </div>
-  </div>
+<h1> Squared Value </h1>
 
-  <div class="container">
-    <form>
-    <label for="number">Number you desire squared</label>
-    <input id="number" type="integer" name="number">
-    <label for="square">Your square value is</label>
-    @square**2
-    </form>
-
-  </div>
-</body>
-</html>
+<div>
+The square of <%@square%> is: @square**2
+</div>

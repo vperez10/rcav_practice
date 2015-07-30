@@ -3,21 +3,22 @@ class CalculationsController < ApplicationController
     render("instructions.html.erb")
   end
 
-def square
-	@square = params[":root"]
-  	render("square.html.erb")
-end
+  def square
+   @square = params[":root"]
+ end
 
-  def square_root
-  	render("square_root.html.erb")
+ def square_root
+  @root = params[":root"]
 end
 
 def range
-  	render("range.html.erb")
+  @min = params[":min"]
+  @max = params[":max"]
 end
 
 def payment
-	
-  	render("payment.html.erb")
+  @apr = params[":apr"]
+  @yr = params[":yr"]
+  @loan = params[":loan"]
 end
 end
